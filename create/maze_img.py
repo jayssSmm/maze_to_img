@@ -31,7 +31,7 @@ def maze_png(maze:list, breadth:int, height:int):
     square_size = 100
 
     for i, row in enumerate(maze):
-        for j, col in enumerate(row):
+        for j, col in enumerate(row): #col is for unpacking
             square = wall if maze[i][j] else visited
             draw = ImageDraw.Draw(square)
 
