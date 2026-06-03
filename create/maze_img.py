@@ -30,8 +30,8 @@ def maze_png(maze:list, breadth:int, height:int):
     visited = Image.new("RGB", (100, 100), '#467846')
     square_size = 100
 
-    for i in range(breadth):
-        for j in range(height):
+    for i, row in enumerate(maze):
+        for j, col in enumerate(row):
             square = wall if maze[i][j] else visited
             draw = ImageDraw.Draw(square)
 
