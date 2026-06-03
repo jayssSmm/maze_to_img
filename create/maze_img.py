@@ -43,10 +43,7 @@ def maze_png(maze:list, breadth:int, height:int):
 
             x1 = j * square_size
             y1 = i * square_size
-            '''
-            x2 = x1 + square_size
-            y2 = y1 + square_size
-            '''
+
             img.paste(square, (x1, y1))
 
     return img
