@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("strawberry")
+img = Image.open("strawberry.png")
 
 '''
 print(img.size)
